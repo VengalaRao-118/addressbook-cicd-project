@@ -10,7 +10,8 @@ pipeline {
 
         stage("Clone") {
             steps {
-                git branch: 'main', url: 'https://github.com/VengalaRao-118/addressbook-cicd-project.git'
+                // ✅ fixed branch + clean URL (no HTML, no extra quotes)
+                git branch: 'manam', url: 'https://github.com/VengalaRao-118/addressbook-cicd-project.git'
                 echo 'Clone Done'
             }
         }
